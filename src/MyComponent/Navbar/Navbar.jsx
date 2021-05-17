@@ -9,7 +9,7 @@ function Navbar(props) {
   // }
   return (
     <>
-      <div id="nav_top" className="nav1 border-bottom">
+      <div id="nav_top" className="nav1">
         <div className="brand d-flex align-items-center">
           <div
             className="togb"
@@ -262,7 +262,7 @@ function Navbar(props) {
           </div>
           <hr style={{ marginTop: "0em" }} />
         </div>
-        {/* <div
+        {<div
           className="refresh"
           onClick={handleClick}
           data-bs-dismiss="offcanvas"
@@ -284,7 +284,7 @@ function Navbar(props) {
             </svg>{" "}
             Refresh
           </div>
-        </div> */}
+        </div>}
       </div>
       <div style={{ height: "70px" }}></div>
     </>
