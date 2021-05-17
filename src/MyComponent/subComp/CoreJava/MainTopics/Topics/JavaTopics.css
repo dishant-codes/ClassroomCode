@@ -1,0 +1,42 @@
+td,th{
+    text-align: center;
+    color: white;
+}
+dl, ol, ul {
+    /* margin-top: 0; */
+    margin-bottom: 0rem;
+}
+p {
+    /* margin-top: 0; */
+    margin-bottom: 0rem;
+}
+.javahead {
+  text-align: center;
+  padding-left: 20px;
+  background-color: rgb(253,215,52);
+  /* color: black; */
+  font-weight: bolder;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+.javacard-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0.5em;
+  padding: 10px 5px;
+  background-color: rgb(37,65,165);
+  /* background-color: #d6d4e0; */
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+.javacard-2 {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 0px solid wheat;
+  background-color: rgb(51,103,213);
+  /* color: black; */
+  /* background-color:#c1946a; */
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px black;
+}

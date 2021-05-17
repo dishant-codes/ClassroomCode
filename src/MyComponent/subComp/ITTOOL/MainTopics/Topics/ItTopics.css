@@ -1,0 +1,46 @@
+td,
+th {
+  text-align: center;
+  color: white;
+}
+dl,
+ol,
+ul {
+  /* margin-top: 0; */
+  margin-bottom: 0rem;
+}
+p {
+  /* margin-top: 0; */
+  margin-bottom: 0rem;
+}
+.ithead {
+  text-align: center;
+  padding-left: 20px;
+  background-color: rgb(53, 70, 78);
+  font-weight: bolder;
+  color: white;
+  /* color: black; */
+  font-family: "Open Sans", sans-serif;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+.itcard-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0.5em;
+  padding: 10px 5px;
+  background-color: rgb(133, 133, 133);
+  /* background-color: #d6d4e0; */
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+}
+.itcard-2 {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 0px solid wheat;
+  background-color: rgb(12, 129, 142);
+  color: white;
+  /* background-color:#c1946a; */
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px black;
+}

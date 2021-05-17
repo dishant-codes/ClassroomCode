@@ -1,0 +1,36 @@
+.card1,.card2,.card3,.card4,.card5,.card6{
+    height: 10em;
+    width: 100%;
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    letter-spacing: 0.5px;
+    line-height: 2em;
+    border-radius: 10px;
+    box-shadow: 3px 2px 8px black;
+}
+.card1{
+    background-image: url("./img/img_breakfast.webp");
+}
+.card2{
+    background-image: url("./img/img_read.webp");
+}
+.card3{
+    background-image: url("./img/Design.webp");
+}
+.card4{
+    background-image: url("./img/Honors.webp");
+}
+.card5{
+    background-image: url("./img/img_backtoschool.webp");
+}
+.card6{
+    background-image: url("./img/img_learnlanguage.webp");
+}
+@media screen and (min-width:720px) {
+    .card1{
+    /* background-position: right bottom!important; */
+    }
+}
