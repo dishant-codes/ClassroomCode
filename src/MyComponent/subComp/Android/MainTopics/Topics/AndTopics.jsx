@@ -6,7 +6,7 @@ function AndTopics() {
     <>
       {topics.map((val, index) => {
         return (
-          <div key={index} className="mb-1" id={val.id}>
+          <div key={index} className="mb-1" id={"subAndcard-" + val.id}>
             <div className="andcard-1 my-2">
               <h1 className="andhead my-2">{val.heading}</h1>
               <>{val.data}</>

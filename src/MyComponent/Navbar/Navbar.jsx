@@ -9,7 +9,7 @@ function Navbar(props) {
   // }
   return (
     <>
-      <div id="nav_top" className="nav1 border-bottom">
+      <div id="nav_top" className="nav1">
         <div className="brand d-flex align-items-center">
           <div
             className="togb"
@@ -59,7 +59,7 @@ function Navbar(props) {
               />
             </svg>
           </div>
-          <h3> {props.head}</h3>
+          <h3>Classroom</h3>
         </div>
         <Link
           to="/Classroom/"
@@ -83,7 +83,7 @@ function Navbar(props) {
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-            Classroom
+            {props.head}
           </h5>
           <button
             type="button"

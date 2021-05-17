@@ -10,9 +10,18 @@ import ScrollToTop from "./MyComponent/ScrollToTop";
 import Tutorial from "./MyComponent/Tutorial/Tutorial";
 import { Route, Switch } from "react-router-dom";
 import Navbar from "./MyComponent/Navbar/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import forADBMS from "./MyComponent/CardsScroll/forADBMS";
+import forAPLR from "./MyComponent/CardsScroll/forAPLR";
+import forAndroid from "./MyComponent/CardsScroll/forAndroid";
 
 function App() {
+  useEffect(() => {
+    forADBMS();
+    forAPLR();
+    forAndroid();
+  });
+
   const [NavTitle, setNavTitle] = useState("Classroom");
   return (
     <>

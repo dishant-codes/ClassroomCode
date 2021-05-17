@@ -10,50 +10,14 @@ const topics = [
     data: (
       <>
         <div className="andcard-2">
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aand#1"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Camera
-            </NavLink>
+          <h6 id="forAndcard-1" style={{ cursor: "pointer" }}>
+            👉 Camera
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aand#2"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 GPS
-            </NavLink>
+          <h6 id="forAndcard-2" style={{ cursor: "pointer" }}>
+            👉 GPS
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aand#3"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Accelerometer
-            </NavLink>
+          <h6 id="forAndcard-3" style={{ cursor: "pointer" }}>
+            👉 Accelerometer
           </h6>
         </div>
       </>

@@ -10,50 +10,14 @@ const topics = [
     data: (
       <>
         <div className="adbcard-2">
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/adbms#1"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 SQL Function
-            </NavLink>
+          <h6 id="forDbcard-1" style={{ cursor: "pointer" }}>
+            👉 SQL Function
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/adbms#2"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Methods
-            </NavLink>
+          <h6 id="forDbcard-2" style={{ cursor: "pointer" }}>
+            👉 Methods
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/adbms#3"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 SQL Database For Oraganizations
-            </NavLink>
+          <h6 id="forDbcard-3" style={{ cursor: "pointer" }}>
+            👉 SQL Database For Oraganizations
           </h6>
         </div>
       </>
@@ -69,7 +33,7 @@ const topics = [
             <>
               <div key={index} className="adbcard-2">
                 <b>{val.title}</b>
-                <p>{val.descp}</p>
+                <>{val.descp}</>
               </div>
             </>
           );

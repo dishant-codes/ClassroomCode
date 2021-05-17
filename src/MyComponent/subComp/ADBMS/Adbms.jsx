@@ -10,7 +10,6 @@ function Adbms() {
         <div className="container">
           <div className="card5 mt-2 mb-1">
             <h1>ADBMS</h1>
-            <h2></h2>
           </div>
         </div>
         <Suspense

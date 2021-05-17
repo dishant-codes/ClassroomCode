@@ -6,12 +6,14 @@ function Topics() {
     <>
       {topics.map((val, index) => {
         return (
-          <>
-            <div key={index} className="adbcard-1 my-2" id={val.id}>
-              <h1 className="adbhead my-2">{val.heading}</h1>
-              <>{val.data}</>
-            </div>
-          </>
+          <div
+            key={index}
+            id={"subDbcard-" + val.id}
+            className="adbcard-1 my-2"
+          >
+            <h1 className="adbhead my-2">{val.heading}</h1>
+            <>{val.data}</>
+          </div>
         );
       })}
     </>

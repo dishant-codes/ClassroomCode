@@ -11,65 +11,17 @@ const topics = [
     data: (
       <>
         <div className="apcard-2">
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aplr#1"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Number System
-            </NavLink>
+          <h6 id="forApcard-1" style={{ cursor: "pointer" }}>
+            👉 Number System
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aplr#2"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Numbers
-            </NavLink>
+          <h6 id="forApcard-2" style={{ cursor: "pointer" }}>
+            👉 Numbers
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aplr#3"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Face Value {`&`} Place Value
-            </NavLink>
+          <h6 id="forApcard-3" style={{ cursor: "pointer" }}>
+            👉 Face Value {`&`} Place Value
           </h6>
-          <h6>
-            <NavLink
-              style={{
-                cursor: "pointer",
-                textDecoration: "none",
-                color: "inherit",
-              }}
-              smooth
-              to="/Classroom/aplr#4"
-              activeClassName="selected"
-              // etc...
-            >
-              👉 Test of Divisibility
-            </NavLink>
+          <h6 id="forApcard-4" style={{ cursor: "pointer" }}>
+            👉 Test of Divisibility
           </h6>
         </div>
       </>

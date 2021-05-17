@@ -1,17 +1,14 @@
 import React, { useEffect } from "react";
-import hljs from "highlight.js/lib/core";
-import "highlight.js/styles/vs2015.css";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import dark from "react-syntax-highlighter/src/styles/hljs/a11y-dark";
 
 function Highlight(props) {
-  useEffect(() => {
-    hljs.highlightAll();
-  }, []);
   return (
     <>
       <div className="mt-1 mb-1 ">
-        <pre>
-          <code language={props.language}>{props.code}</code>
-        </pre>
+        <SyntaxHighlighter language={props.language} style={dark}>
+          {props.code}
+        </SyntaxHighlighter>
       </div>
     </>
   );

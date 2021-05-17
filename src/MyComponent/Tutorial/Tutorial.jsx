@@ -11,8 +11,6 @@ function Tutorial() {
             <iframe
               width="560"
               height="315"
-              width="560"
-              height="315"
               src="https://www.youtube.com/embed/xVhlOyutE3c"
               title="YouTube video player"
               frameBorder="0"
@@ -22,17 +20,17 @@ function Tutorial() {
           </div>
           <hr />
           <div className="center card-2">
-            <div className="video">
-              <iframe
-                width="auto"
-                height="auto"
-                src="https://www.youtube.com/embed/16TVTr8Ya6s"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            {/* <div className="video"> */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/16TVTr8Ya6s"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            {/* </div> */}
           </div>
           <hr />
           <div className="center card-2">
