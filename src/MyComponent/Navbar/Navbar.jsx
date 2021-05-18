@@ -262,7 +262,7 @@ function Navbar(props) {
           </div>
           <hr style={{ marginTop: "0em" }} />
         </div>
-        {/* <div
+        {<div
           className="refresh"
           onClick={handleClick}
           data-bs-dismiss="offcanvas"
@@ -284,7 +284,7 @@ function Navbar(props) {
             </svg>{" "}
             Refresh
           </div>
-        </div> */}
+        </div>}
       </div>
       <div style={{ height: "70px" }}></div>
     </>
