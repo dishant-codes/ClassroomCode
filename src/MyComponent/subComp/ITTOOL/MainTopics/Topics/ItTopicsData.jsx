@@ -11,7 +11,7 @@ const topics = [
             <>
               <div key={index} className="itcard-2">
                 <b>{val.title}</b>
-                <p>{val.descp}</p>
+                <>{val.descp}</>
               </div>
             </>
           );

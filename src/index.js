@@ -5,6 +5,7 @@ import App from "./App";
 import Subjects from "./MyComponent/Subjects/Subjects";
 import { BrowserRouter } from "react-router-dom";
 import $ from "jquery";
+import Preloader from "./MyComponent/Preloader";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,14 +20,22 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+window.onload = function () {
+  $(".preload").fadeOut(2000);
+  $(".main-div").show();
+};
+
 if ($("#back-to-top").length) {
   var scrollTrigger = 100, // px
     backToTop = function () {
       var scrollTop = $(window).scrollTop();
       if (scrollTop > scrollTrigger) {
         $("#back-to-top").addClass("show");
+        $("#nav_top").addClass("bottom-shadow");
       } else {
         $("#back-to-top").removeClass("show");
+        $("#nav_top").removeClass("bottom-shadow");
       }
     };
   backToTop();

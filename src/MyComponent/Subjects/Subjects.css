@@ -29,6 +29,7 @@
 .card6{
     background-image: url("./img/img_learnlanguage.webp");
 }
+
 @media screen and (min-width:720px) {
     .card1{
     /* background-position: right bottom!important; */

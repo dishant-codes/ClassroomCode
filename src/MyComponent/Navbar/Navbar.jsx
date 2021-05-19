@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Icon from "./logo.svg";
 
 function Navbar(props) {
-  // function handleClick() {
-  //   window.location.reload();
-  // }
+  function handleClick() {
+    window.location.reload();
+  }
   return (
     <>
       <div id="nav_top" className="nav1">
@@ -18,27 +18,6 @@ function Navbar(props) {
             data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample"
           >
-            {/* <div
-            className="line"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          ></div>
-          <div
-            className="line"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          ></div>
-          <div
-            className="line"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          ></div> */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -64,7 +43,7 @@ function Navbar(props) {
         <Link
           to="/Classroom/"
           style={{ textDecoration: "none" }}
-          onClick={() => props.setNavTitle("Classroom")}
+          onClick={() => handleClick()}
         >
           <img
             className="rounded-circle"
@@ -262,10 +241,11 @@ function Navbar(props) {
           </div>
           <hr style={{ marginTop: "0em" }} />
         </div>
-        {/* <div
+        <div
           className="refresh"
           onClick={handleClick}
           data-bs-dismiss="offcanvas"
+          style={{ cursor: "pointer" }}
         >
           <div>
             <svg
@@ -284,7 +264,7 @@ function Navbar(props) {
             </svg>{" "}
             Refresh
           </div>
-        </div> */}
+        </div>
       </div>
       <div style={{ height: "70px" }}></div>
     </>

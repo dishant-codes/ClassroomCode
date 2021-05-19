@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 function Subjects(props) {
   return (
     <>
-      <div className="container">
+      <div className="container subject-div">
         <Link
           to="/Classroom/spm"
           style={{ cursor: "pointer", textDecoration: "none" }}

@@ -3,6 +3,7 @@ import subTopics2 from "../SubTopics/SubTopics2";
 import subTopics3 from "../SubTopics/SubTopics3";
 import "./AndTopics.css";
 import { NavHashLink as NavLink } from "react-router-hash-link";
+import $ from "jquery";
 const topics = [
   {
     id: 0,
@@ -10,13 +11,46 @@ const topics = [
     data: (
       <>
         <div className="andcard-2">
-          <h6 id="forAndcard-1" style={{ cursor: "pointer" }}>
+          <h6
+            id="forAndcard-1"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subAndcard-1").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 Camera
           </h6>
-          <h6 id="forAndcard-2" style={{ cursor: "pointer" }}>
+          <h6
+            id="forAndcard-2"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subAndcard-2").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 GPS
           </h6>
-          <h6 id="forAndcard-3" style={{ cursor: "pointer" }}>
+          <h6
+            id="forAndcard-3"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subAndcard-3").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 Accelerometer
           </h6>
         </div>

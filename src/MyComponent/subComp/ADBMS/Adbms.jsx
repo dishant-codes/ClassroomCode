@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { useEffect, Suspense } from "react";
 import "./Adbms.css";
 // import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";

@@ -6,7 +6,11 @@ function Topics() {
     <>
       {topics.map((val, index) => {
         return (
-          <div key={index} className="javacard-1 my-2">
+          <div
+            key={index}
+            className="javacard-1 my-2"
+            id={"subJavacard-" + val.id}
+          >
             <h1 className="javahead my-2">{val.heading}</h1>
             <>{val.data}</>
           </div>

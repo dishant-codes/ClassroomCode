@@ -3,6 +3,7 @@ import subTopics2 from "../SubTopics/SubTopics2";
 import subTopics3 from "../SubTopics/SubTopics3";
 import "./AdbTopics.css";
 import { NavHashLink as NavLink } from "react-router-hash-link";
+import $ from "jquery";
 const topics = [
   {
     id: 0,
@@ -10,13 +11,46 @@ const topics = [
     data: (
       <>
         <div className="adbcard-2">
-          <h6 id="forDbcard-1" style={{ cursor: "pointer" }}>
+          <h6
+            id="forDbcard-1"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subDbcard-1").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 SQL Function
           </h6>
-          <h6 id="forDbcard-2" style={{ cursor: "pointer" }}>
+          <h6
+            id="forDbcard-2"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subDbcard-2").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 Methods
           </h6>
-          <h6 id="forDbcard-3" style={{ cursor: "pointer" }}>
+          <h6
+            id="forDbcard-3"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              $("html, body").animate(
+                {
+                  scrollTop: $("#subDbcard-3").offset().top - 60,
+                },
+                2
+              );
+            }}
+          >
             👉 SQL Database For Oraganizations
           </h6>
         </div>
