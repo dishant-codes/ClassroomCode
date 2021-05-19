@@ -15,7 +15,7 @@
   width: 100%;
   z-index: 3;
   background-color: #fff;
-  border-bottom: .0625rem solid #e0e0e0;
+  border-bottom: .0625rem solid #e0e0e0;//Make it Little bit thick
 }
 .brand h3 {
   margin-left: 10px;
