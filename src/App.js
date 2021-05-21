@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Spm from "./MyComponent/subComp/SPM/Spm";
 import Aplr from "./MyComponent/subComp/Aplr/Aplr";
@@ -8,32 +8,25 @@ import Adbms from "./MyComponent/subComp/ADBMS/Adbms";
 import CoreJava from "./MyComponent/subComp/CoreJava/Java";
 import ScrollToTop from "./MyComponent/ScrollToTop";
 import Tutorial from "./MyComponent/Tutorial/Tutorial";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Navbar from "./MyComponent/Navbar/Navbar";
-import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
-import Preloader from "./MyComponent/Preloader";
-import $ from "jquery";
 import Subjects from "./MyComponent/Subjects/Subjects";
+import FeedBack from "./MyComponent/FeedBack";
 
 function App() {
   const [NavTitle, setNavTitle] = useState("Classroom");
   const history = useHistory();
 
   useEffect(() => {
-    return () =>
-      history.listen((location) => {
-        if (history.action === "POP") {
-          setNavTitle("Classroom");
-          $(".preload").fadeOut(1500);
-          $(".main-div").show();
-        }
-      });
+    return history.listen((location) => {
+      if (history.action === "POP") {
+        setNavTitle("Classroom");
+      }
+    });
   }, [NavTitle]);
 
   return (
     <>
-      <Preloader />
       <div className="main-div">
         <Navbar head={NavTitle} setNavTitle={setNavTitle} />
         <Switch>
@@ -70,6 +63,10 @@ function App() {
           <Route exact path="/Classroom/tutorial">
             <ScrollToTop />
             <Tutorial />
+          </Route>
+          <Route exact path="/Classroom/feedback">
+            <ScrollToTop />
+            <FeedBack />
           </Route>
         </Switch>
       </div>

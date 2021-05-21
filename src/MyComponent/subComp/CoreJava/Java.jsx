@@ -1,7 +1,6 @@
 import React from "react";
 import "./Java.css";
 import Topics from "./MainTopics/Topics/JavaTopics";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 function Java() {
   return (

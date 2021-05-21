@@ -1,7 +1,6 @@
 import React from "react";
 import "./Aplr.css";
 import ApTopics from "./MainTopics/Topics/ApTopics";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 function Aplr() {
   return (

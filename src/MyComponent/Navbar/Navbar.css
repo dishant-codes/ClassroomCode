@@ -76,10 +76,10 @@
 #offcanvasExample {
   width: 75%;
 }
-.refresh {
+/* .refresh {
   padding: 0em 0.5em 0.5em 1em;
-}
-@media screen and (min-width: 740px) and (max-width: 1280px) {
+} */
+@media screen and (min-width: 740px){
   #offcanvasExample {
     width: 30%;
   }

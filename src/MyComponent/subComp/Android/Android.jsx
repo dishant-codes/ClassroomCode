@@ -1,7 +1,6 @@
 import React from "react";
 import "./Android.css";
 import Topics from "./MainTopics/Topics/AndTopics";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 function Android() {
   return (

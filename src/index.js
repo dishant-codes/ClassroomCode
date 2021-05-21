@@ -1,15 +1,16 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
-import Subjects from "./MyComponent/Subjects/Subjects";
 import { BrowserRouter } from "react-router-dom";
 import $ from "jquery";
 import Preloader from "./MyComponent/Preloader";
+const App = React.lazy(() => import("./App"));
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <Suspense fallback={<Preloader />}>
+      <App />
+    </Suspense>
     <a href="#" id="back-to-top" title="Back to top">
       &uarr;
     </a>
@@ -20,11 +21,6 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
-window.onload = function () {
-  $(".preload").fadeOut(2000);
-  $(".main-div").show();
-};
 
 if ($("#back-to-top").length) {
   var scrollTrigger = 100, // px

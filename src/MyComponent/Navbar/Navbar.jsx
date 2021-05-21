@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Icon from "./logo.svg";
-
+import Menu from "./menu.svg";
 function Navbar(props) {
   function handleClick() {
     window.location.reload();
@@ -18,25 +18,13 @@ function Navbar(props) {
             data-bs-target="#offcanvasExample"
             aria-controls="offcanvasExample"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              className="bi bi-list"
-              viewBox="0 0 16 16"
+            <img
+              src={Menu}
+              alt=""
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"
-            >
-              <path
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample"
-                fillRule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
+            />
           </div>
           <h3>Classroom</h3>
         </div>
@@ -81,6 +69,7 @@ function Navbar(props) {
                   style={{ textDecoration: "none" }}
                   data-bs-dismiss="offcanvas"
                 >
+                  {" "}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -239,19 +228,26 @@ function Navbar(props) {
               </div>
             </Link>
           </div>
+
           <hr style={{ marginTop: "0em" }} />
         </div>
         <div
-          className="refresh"
+          className="refresh btn btn-outline-warning"
           onClick={handleClick}
           data-bs-dismiss="offcanvas"
-          style={{ cursor: "pointer" }}
+          style={{
+            cursor: "pointer",
+            marginBottom: "0.6rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="30"
+              height="30"
               fill="currentColor"
               className="bi bi-arrow-clockwise"
               viewBox="0 0 16 16"
@@ -265,6 +261,24 @@ function Navbar(props) {
             Refresh
           </div>
         </div>
+        <Link
+          to="/Classroom/feedback"
+          className="feedback-link btn btn-outline-primary my-3"
+          data-bs-dismiss="offcanvas"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            className="bi bi-chat-right-text-fill"
+            viewBox="0 0 16 16"
+            style={{ marginRight: "10px" }}
+          >
+            <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zm0 2.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1z" />
+          </svg>
+          FeedBack
+        </Link>
       </div>
       <div style={{ height: "70px" }}></div>
     </>

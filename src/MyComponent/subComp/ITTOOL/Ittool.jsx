@@ -1,7 +1,6 @@
 import React from "react";
 import "./Ittool.css";
 import Topics from "./MainTopics/Topics/ItTopics";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 function Ittool() {
   return (

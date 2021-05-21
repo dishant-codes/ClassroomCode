@@ -1,6 +1,5 @@
-import React, { useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import "./Adbms.css";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 const Topics = React.lazy(() => import("./MainTopics/Topics/AdbTopics"));
 function Adbms() {

@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 import "./Tutorial.css";
 function Tutorial() {
   return (

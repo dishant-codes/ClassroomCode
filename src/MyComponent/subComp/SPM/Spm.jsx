@@ -1,7 +1,6 @@
 import React from "react";
 import "./Spm.css";
 import Topics from "./MainTopics/Topics/SpmTopics";
-// import Navbar from "../../Navbar/Navbar";
 import "../../Subjects/Subjects.css";
 function Spm() {
   return (
