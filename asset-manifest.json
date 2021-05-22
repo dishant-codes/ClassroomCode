@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/Classroom/static/css/main.c6609714.chunk.css",
+    "main.js": "/Classroom/static/js/main.75c55130.chunk.js",
+    "main.js.map": "/Classroom/static/js/main.75c55130.chunk.js.map",
+    "runtime-main.js": "/Classroom/static/js/runtime-main.11c64705.js",
+    "runtime-main.js.map": "/Classroom/static/js/runtime-main.11c64705.js.map",
+    "static/js/2.f067a2c2.chunk.js": "/Classroom/static/js/2.f067a2c2.chunk.js",
+    "static/js/2.f067a2c2.chunk.js.map": "/Classroom/static/js/2.f067a2c2.chunk.js.map",
+    "static/css/3.59071f42.chunk.css": "/Classroom/static/css/3.59071f42.chunk.css",
+    "static/js/3.89afefd0.chunk.js": "/Classroom/static/js/3.89afefd0.chunk.js",
+    "static/js/3.89afefd0.chunk.js.map": "/Classroom/static/js/3.89afefd0.chunk.js.map",
+    "static/js/4.221ae501.chunk.js": "/Classroom/static/js/4.221ae501.chunk.js",
+    "static/js/4.221ae501.chunk.js.map": "/Classroom/static/js/4.221ae501.chunk.js.map",
+    "static/css/5.fcfcd339.chunk.css": "/Classroom/static/css/5.fcfcd339.chunk.css",
+    "static/js/5.2106f444.chunk.js": "/Classroom/static/js/5.2106f444.chunk.js",
+    "static/js/5.2106f444.chunk.js.map": "/Classroom/static/js/5.2106f444.chunk.js.map",
+    "index.html": "/Classroom/index.html",
+    "static/css/3.59071f42.chunk.css.map": "/Classroom/static/css/3.59071f42.chunk.css.map",
+    "static/css/5.fcfcd339.chunk.css.map": "/Classroom/static/css/5.fcfcd339.chunk.css.map",
+    "static/css/main.c6609714.chunk.css.map": "/Classroom/static/css/main.c6609714.chunk.css.map",
+    "static/js/2.f067a2c2.chunk.js.LICENSE.txt": "/Classroom/static/js/2.f067a2c2.chunk.js.LICENSE.txt",
+    "static/js/4.221ae501.chunk.js.LICENSE.txt": "/Classroom/static/js/4.221ae501.chunk.js.LICENSE.txt",
+    "static/media/Subjects.css": "/Classroom/static/media/img_read.a07bc216.webp",
+    "static/media/SSP.470a4941.png": "/Classroom/static/media/SSP.470a4941.png",
+    "static/media/add.1d763f52.jpg": "/Classroom/static/media/add.1d763f52.jpg",
+    "static/media/app-logo.7bcacfe2.png": "/Classroom/static/media/app-logo.7bcacfe2.png",
+    "static/media/formulae.b891877d.jpg": "/Classroom/static/media/formulae.b891877d.jpg",
+    "static/media/into100.662d0da3.jpg": "/Classroom/static/media/into100.662d0da3.jpg",
+    "static/media/into10000.d26bb3fa.jpg": "/Classroom/static/media/into10000.d26bb3fa.jpg",
+    "static/media/menu.5681e60b.svg": "/Classroom/static/media/menu.5681e60b.svg",
+    "static/media/sub.4bbe87aa.jpg": "/Classroom/static/media/sub.4bbe87aa.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11c64705.js",
+    "static/js/4.221ae501.chunk.js",
+    "static/css/main.c6609714.chunk.css",
+    "static/js/main.75c55130.chunk.js"
+  ]
+}
